@@ -1,0 +1,55 @@
+train-01 S K
+train-02 S S K S S S P P S K S P P P P P K S P
+train-03 P P K P K S P S K P K
+train-04 P K K S S K
+train-05 S
+train-06 S P K P P S S P S K S S S
+train-07 S
+train-08 P K P K P P
+train-09 P P P S P S P S S S K S P K
+train-10 P S P P P K K S P S S S
+train-11 S P P S K P P P
+train-12 S S P S
+train-13 K P
+train-14 K P P K S K S S K P S P K S P S S S
+train-15 S K S S K K K S K K P P
+train-16 K S K P S
+train-17 S K S K S P P P P S S K S P K K S
+train-18 K S P P S S S S S S P P P K S S K K P
+train-19 K P K P S P K P S S K
+train-20 S S K K K S K P P S S
+train-21 P K S S
+train-22 S S P P P P P P K S P K P P P P S
+train-23 P K S S S K S K S K S S S P P
+train-24 P S P P P S K S K S
+train-25 S S S K P K S S P S
+train-26 P P K S P K S K P
+train-27 S S K S
+train-28 K P P K P S S K K K S S S S K K
+train-29 S K S K P P P P K S K K S K K S
+train-30 P S S P S K S K
+train-31 S K S S K K S K K S
+train-32 K
+train-33 S K S K P S S P P P S P
+train-34 S S K K S P P P S S
+train-35 S S K S
+train-36 P P K P K K K K
+train-37 K S S K K S K S K P P K K S
+train-38 P K P P P K
+train-39 P K S P P K K S K S S P
+train-40 P P P K S K K
+train-41 K K S K K S
+train-42 P K K S P P P P P
+train-43 P P S S S P K S S S K S S
+train-44 K P S K P S S P P P S P
+train-45 P P P
+train-46 P K
+train-47 P S P K K S S S K P P K S K P S
+train-48 P S K P
+train-49 K K K S
+train-50 S K K P K K P P K S P
+train-51 P S K S P S K S P S K S P S K S
+train-52 P S S P K S P S S S S P K S S S
+train-53 P S P P K S P P P S P S P K S S S
+train-54 P S S S S K S S S P S P S P K S S S
+train-55 P S S P S S P S S S S P K S S S
