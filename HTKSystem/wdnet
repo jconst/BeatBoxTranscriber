@@ -1,69 +1,22 @@
 VERSION=1.0
-N=22   L=45   
+N=8    L=12   
 I=0    W=SENT-END            
-I=1    W=YOUNG               
-I=2    W=STEVE               
-I=3    W=CALL                
-I=4    W=!NULL               
-I=5    W=PHONE               
-I=6    W=ZERO                
+I=1    W=K                   
+I=2    W=!NULL               
+I=3    W=S                   
+I=4    W=P                   
+I=5    W=SENT-START          
+I=6    W=!NULL               
 I=7    W=!NULL               
-I=8    W=OH                  
-I=9    W=NINE                
-I=10   W=EIGHT               
-I=11   W=SEVEN               
-I=12   W=SIX                 
-I=13   W=FIVE                
-I=14   W=FOUR                
-I=15   W=THREE               
-I=16   W=TWO                 
-I=17   W=ONE                 
-I=18   W=DIAL                
-I=19   W=SENT-START          
-I=20   W=!NULL               
-I=21   W=!NULL               
-J=0     S=1    E=0    
-J=1     S=7    E=0    
-J=2     S=2    E=1    
-J=3     S=4    E=1    
-J=4     S=4    E=2    
-J=5     S=19   E=3    
-J=6     S=3    E=4    
-J=7     S=5    E=4    
-J=8     S=19   E=5    
-J=9     S=7    E=6    
-J=10    S=18   E=6    
-J=11    S=6    E=7    
-J=12    S=8    E=7    
-J=13    S=9    E=7    
-J=14    S=10   E=7    
-J=15    S=11   E=7    
-J=16    S=12   E=7    
-J=17    S=13   E=7    
-J=18    S=14   E=7    
-J=19    S=15   E=7    
-J=20    S=16   E=7    
-J=21    S=17   E=7    
-J=22    S=7    E=8    
-J=23    S=18   E=8    
-J=24    S=7    E=9    
-J=25    S=18   E=9    
-J=26    S=7    E=10   
-J=27    S=18   E=10   
-J=28    S=7    E=11   
-J=29    S=18   E=11   
-J=30    S=7    E=12   
-J=31    S=18   E=12   
-J=32    S=7    E=13   
-J=33    S=18   E=13   
-J=34    S=7    E=14   
-J=35    S=18   E=14   
-J=36    S=7    E=15   
-J=37    S=18   E=15   
-J=38    S=7    E=16   
-J=39    S=18   E=16   
-J=40    S=7    E=17   
-J=41    S=18   E=17   
-J=42    S=19   E=18   
-J=43    S=21   E=19   
-J=44    S=0    E=20   
+J=0     S=2    E=0    
+J=1     S=2    E=1    
+J=2     S=5    E=1    
+J=3     S=1    E=2    
+J=4     S=3    E=2    
+J=5     S=4    E=2    
+J=6     S=2    E=3    
+J=7     S=5    E=3    
+J=8     S=2    E=4    
+J=9     S=5    E=4    
+J=10    S=7    E=5    
+J=11    S=0    E=6    

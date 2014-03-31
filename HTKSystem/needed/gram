@@ -1,4 +1,2 @@
-$digit = ONE | TWO | THREE | FOUR | FIVE |
-SIX | SEVEN | EIGHT | NINE | OH | ZERO;
-$name = [ STEVE ] YOUNG;
-( SENT-START ( DIAL <$digit> | (PHONE|CALL) $name) SENT-END )
+$beat = P | S | K;
+( SENT-START <$beat> SENT-END )
