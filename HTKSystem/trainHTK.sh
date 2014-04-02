@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Monophones:
 # make all directories in advance
 mkdir hmm{0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15}
 
@@ -59,3 +58,10 @@ HVite -l '*' -o SWT -b silence -C needed/config -a -H hmm7/macros -H hmm7/hmmdef
 # two more passes of HERest
 HERest -C needed/config -I phones0.mlf -t 250.0 150.0 1000.0 -S train.scp -H hmm7/macros -H hmm7/hmmdefs -M hmm8/ monophones1
 HERest -C needed/config -I phones0.mlf -t 250.0 150.0 1000.0 -S train.scp -H hmm8/macros -H hmm8/hmmdefs -M hmm9/ monophones1
+
+HHEd -H hmm9/macros -H hmm9/hmmdefs -M hmm10/ needed/mix.hed monophones0
+
+# two more passes of HERest
+HERest -C needed/config -I phones0.mlf -t 250.0 150.0 1000.0 -S train.scp -H hmm10/macros -H hmm10/hmmdefs -M hmm11/ monophones1
+HERest -C needed/config -I phones0.mlf -t 250.0 150.0 1000.0 -S train.scp -H hmm11/macros -H hmm11/hmmdefs -M hmm12/ monophones1
+
