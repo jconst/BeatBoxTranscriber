@@ -1,7 +1,5 @@
 K               k sil
- P               p sil
- S               s sil
- SENT-END        sil
- SENT-START      sil
- silence		 sil
- 
+P               p sil
+S               s sil
+SENT-END        sil
+SENT-START      sil
