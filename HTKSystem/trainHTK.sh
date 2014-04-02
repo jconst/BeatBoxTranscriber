@@ -16,9 +16,6 @@ perl needed/addsentstart.pl
 # construct your dictionary
 HDMan -m -w wlist -n monophones1 -l dlog dict needed/beatDict
 
-# ??? add sil to monophones ???
-echo sil >> monophones1
-
 # make monophones0 -- remove sp from monophones1
 perl needed/createmonophones0.pl
 

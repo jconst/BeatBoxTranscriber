@@ -1,3 +1,5 @@
-K [K] k
-P [P] p
-S [S] s
+K 			[K] 			k
+P 			[P] 			p
+S 			[S] 			s
+SENT-END	[SENT-END]		sil
+SENT-START	[SENT-START]	sil

@@ -3,10 +3,10 @@ WARNING: no script file needed/beatDict.ded
 Dictionary Usage Statistics
 ---------------------------
   Dictionary    TotalWords WordsUsed  TotalProns PronsUsed
-    beatDict         3          3          3          3
-        dict         3          3          3          3
+    beatDict         5          5          5          5
+        dict         5          5          5          5
 
-3 words required, 0 missing
+5 words required, 0 missing
 
 New Phone Usage Counts
 ---------------------
@@ -14,5 +14,6 @@ New Phone Usage Counts
   2. sp    :     3
   3. p     :     1
   4. s     :     1
+  5. sil   :     2
 
 Dictionary dict created
