@@ -1,4 +1,7 @@
 WARNING: no script file needed/beatDict.ded
+Missing Words
+-------------
+SENT-END
 
 Dictionary Usage Statistics
 ---------------------------
@@ -6,7 +9,7 @@ Dictionary Usage Statistics
     beatDict         5          5          5          5
         dict         5          5          5          5
 
-5 words required, 0 missing
+6 words required, 1 missing
 
 New Phone Usage Counts
 ---------------------

@@ -1,60 +1,60 @@
-train-01 S K
-train-02 S S K S S S P P S K S P P P P P K S P
-train-03 P P K P K S P S K P K
-train-04 P K K S S K
-train-05 S
-train-06 S P K P P S S P S K S S S
-train-07 S
-train-08 P K P K P P
-train-09 P P P S P S P S S S K S P K
-train-10 P S P P P K K S P S S S
-train-11 S P P S K P P P
-train-12 S S P S
-train-13 K P
-train-14 K P P K S K S S K P S P K S P S S S
-train-15 S K S S K K K S K K P P
-train-16 K S K P S
-train-17 S K S K S P P P P S S K S P K K S
-train-18 K S P P S S S S S S P P P K S S K K P
-train-19 K P K P S P K P S S K
-train-20 S S K K K S K P P S S
-train-21 P K S S
-train-22 S S P P P P P P K S P K P P P P S
-train-23 P K S S S K S K S K S S S P P
-train-24 P S P P P S K S K S
-train-25 S S S K P K S S P S
-train-26 P P K S P K S K P
-train-27 S S K S
-train-28 K P P K P S S K K K S S S S K K
-train-29 S K S K P P P P K S K K S K K S
-train-30 P S S P S K S K
-train-31 S K S S K K S K K S
-train-32 K
-train-33 S K S K P S S P P P S P
-train-34 S S K K S P P P S S
-train-35 S S K S
-train-36 P P K P K K K K
-train-37 K S S K K S K S K P P K K S
-train-38 P K P P P K
-train-39 P K S P P K K S K S S P
-train-40 P P P K S K K
-train-41 K K S K K S
-train-42 P K K S P P P P P
-train-43 P P S S S P K S S S K S S
-train-44 K P S K P S S P P P S P
-train-45 P P P
-train-46 P K
-train-47 P S P K K S S S K P P K S K P S
-train-48 P S K P
-train-49 K K K S
-train-50 S K K P K K P P K S P
-train-51 P S K S P S K S P S K S P S K S
-train-52 P S S P K S P S S S S P K S S S
-train-53 P S P P K S P P P S P S P K S S S
-train-54 P S S S S K S S S P S P S P K S S S
-train-55 P S S P S S P S S S S P K S S S
-train-56 P P P K P P K S S S P P P K P P K S S S
-train-57 P S S P K S P S S S S P K S S S
-train-58 P S K S P P K S P S K S P P K S
-train-59 P S K S P S K S P S K S P S K S
-train-60 P S K S P S K S P S K S P S K S
+train-01 SENT-START S K SENT-END
+train-02 SENT-START S S K S S S P P S K S P P P P P K S P SENT-END
+train-03 SENT-START P P K P K S P S K P K SENT-END
+train-04 SENT-START P K K S S K SENT-END
+train-05 SENT-START S SENT-END
+train-06 SENT-START S P K P P S S P S K S S S SENT-END
+train-07 SENT-START S SENT-END
+train-08 SENT-START P K P K P P SENT-END
+train-09 SENT-START P P P S P S P S S S K S P K SENT-END
+train-10 SENT-START P S P P P K K S P S S S SENT-END
+train-11 SENT-START S P P S K P P P SENT-END
+train-12 SENT-START S S P S SENT-END
+train-13 SENT-START K P SENT-END
+train-14 SENT-START K P P K S K S S K P S P K S P S S S SENT-END
+train-15 SENT-START S K S S K K K S K K P P SENT-END
+train-16 SENT-START K S K P S SENT-END
+train-17 SENT-START S K S K S P P P P S S K S P K K S SENT-END
+train-18 SENT-START K S P P S S S S S S P P P K S S K K P SENT-END
+train-19 SENT-START K P K P S P K P S S K SENT-END
+train-20 SENT-START S S K K K S K P P S S SENT-END
+train-21 SENT-START P K S S SENT-END
+train-22 SENT-START S S P P P P P P K S P K P P P P S SENT-END
+train-23 SENT-START P K S S S K S K S K S S S P P SENT-END
+train-24 SENT-START P S P P P S K S K S SENT-END
+train-25 SENT-START S S S K P K S S P S SENT-END
+train-26 SENT-START P P K S P K S K P SENT-END
+train-27 SENT-START S S K S SENT-END
+train-28 SENT-START K P P K P S S K K K S S S S K K SENT-END
+train-29 SENT-START S K S K P P P P K S K K S K K S SENT-END
+train-30 SENT-START P S S P S K S K SENT-END
+train-31 SENT-START S K S S K K S K K S SENT-END
+train-32 SENT-START K SENT-END
+train-33 SENT-START S K S K P S S P P P S P SENT-END
+train-34 SENT-START S S K K S P P P S S SENT-END
+train-35 SENT-START S S K S SENT-END
+train-36 SENT-START P P K P K K K K SENT-END
+train-37 SENT-START K S S K K S K S K P P K K S SENT-END
+train-38 SENT-START P K P P P K SENT-END
+train-39 SENT-START P K S P P K K S K S S P SENT-END
+train-40 SENT-START P P P K S K K SENT-END
+train-41 SENT-START K K S K K S SENT-END
+train-42 SENT-START P K K S P P P P P SENT-END
+train-43 SENT-START P P S S S P K S S S K S S SENT-END
+train-44 SENT-START K P S K P S S P P P S P SENT-END
+train-45 SENT-START P P P SENT-END
+train-46 SENT-START P K SENT-END
+train-47 SENT-START P S P K K S S S K P P K S K P S SENT-END
+train-48 SENT-START P S K P SENT-END
+train-49 SENT-START K K K S SENT-END
+train-50 SENT-START S K K P K K P P K S P SENT-END
+train-51 SENT-START P S K S P S K S P S K S P S K S SENT-END
+train-52 SENT-START P S S P K S P S S S S P K S S S SENT-END
+train-53 SENT-START P S P P K S P P P S P S P K S S S SENT-END
+train-54 SENT-START P S S S S K S S S P S P S P K S S S SENT-END
+train-55 SENT-START P S S P S S P S S S S P K S S S SENT-END
+train-56 SENT-START P P P K P P K S S S P P P K P P K S S S SENT-END
+train-57 SENT-START P S S P K S P S S S S P K S S S SENT-END
+train-58 SENT-START P S K S P P K S P S K S P P K S SENT-END
+train-59 SENT-START P S K S P S K S P S K S P S K S SENT-END
+train-60 SENT-START P S K S P S K S P S K S P S K S SENT-END
