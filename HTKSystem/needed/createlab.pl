@@ -15,7 +15,7 @@ foreach my $line (@lines) {
 		$_ = $line;
 		s/\"//g;
 		close(SOURCE);
-		open(SOURCE, ">needed/TestPrompts/$_");
+		open(SOURCE, ">TrainPrompts/$_");
 	}
 	else {print SOURCE "$line\n"}
 }

@@ -7,7 +7,7 @@
 
 use strict;
 
-my $loc = 'needed/TestPrompts';
+my $loc = 'TrainPrompts';
 my @files = <$loc/*>;
 
 open(SOURCE, ">codetr.scp");
@@ -18,7 +18,7 @@ foreach my $file (@files) {
 		s/.wav//;
 		my $short = $`;
 		$_ = $short;
-		s/TestPrompts/TestPromptsMFC/;
+		s/TrainPrompts/TrainPromptsMFC/;
 		print SOURCE "$short.wav $_.mfc\n";
 		print TRAIN "$short.wav\n";
 	}
