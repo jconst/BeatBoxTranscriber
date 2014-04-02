@@ -2,6 +2,7 @@ import sys
 import pyaudio
 import wave
 import time
+import sched
 
 wavNames = ["K", "P", "S"]
 pa = pyaudio.PyAudio()
@@ -13,6 +14,7 @@ stream = pa.open(format=pa.get_format_from_width(sampWidth),
 				 channels=dummyWav.getnchannels(),
 				 rate=dummyWav.getframerate(),
 				 output=True)
+schedule = sched.scheduler(time.time, time.sleep)
 
 class Sound:
 	def __init__(self, name, length):
@@ -23,8 +25,8 @@ def parseLabel(f):
 	sounds = {}
 	for line in f:
 		startStr, endStr, name, prob = line.split()
-		start = float(startStr)/2000000
-		end = float(endStr)/2000000
+		start = float(startStr)/10000000.0
+		end = float(endStr)/10000000.0
 		print name + " " + str(start)
 		# note: length isn't actually accurate atm
 		length = end - start
@@ -32,21 +34,16 @@ def parseLabel(f):
 			sounds[start] = Sound(name, length)
 	return sounds
 
-def playSounds(sounds):
+def scheduleSounds(sounds):
 	wavList = [wave.open(name + ".wav", 'rb') for name in wavNames]
 	wavs = dict(zip(wavNames, wavList))
 	first = time.time()
-	while len(sounds):
-		start, sound = sounds.items()[0]
-		cur = time.time() - first
-		if cur >= start:
-			playWav(wavs[sound.name], sound.name)
-			del sounds[start]
-		else:
-			time.sleep((start - cur))
+	for start, sound in sounds.items():
+		schedule.enter(start, 1, playWav, (wavs[sound.name],))
+	schedule.run()
 
-def playWav(wav, name):
-	print "playing wav " + str(name)
+def playWav(wav):
+	print "playing wav " + str(wav)
 	data = wav.readframes(CHUNK)
 
 	while data != '':
@@ -59,7 +56,7 @@ def playWav(wav, name):
 labelFN = sys.argv[1]
 with open(labelFN) as f:
 	sounds = parseLabel(f)
-	playSounds(sounds)
+	scheduleSounds(sounds)
 
 	stream.stop_stream()
 	stream.close()
