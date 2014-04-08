@@ -2,9 +2,9 @@ import sys
 from random import randint
 
 vocab = ['P', 'S', 'K']
-maxLen = 20
-numPrompts = 50
-filename = sys.argv[1]
+maxLen = 15
+numPrompts = int(sys.argv[1])
+filename = sys.argv[2]
 lines = []
 
 with open(filename, 'w') as f:
