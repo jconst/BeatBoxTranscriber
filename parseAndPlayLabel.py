@@ -7,6 +7,7 @@ beatNames = ['P', 'S', 'K']
 channel = 1  # This is MIDI channel 1
 note_on_action = 0x90
 schedule = sched.scheduler(time.time, time.sleep)
+send_midi((note_on_action | channel, 0, 127)) # warm up the channel
 
 def parseLabel(f):
 	sounds = {}
@@ -19,7 +20,7 @@ def parseLabel(f):
 
 def scheduleSounds(sounds):
 	for start, sound in sounds.items():
-		schedule.enter(start, 1, playSound, (sound,))
+		schedule.enter(start, 1, playSound, sound)
 	schedule.run()
 
 def playSound(name):
