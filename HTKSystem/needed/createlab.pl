@@ -5,7 +5,7 @@
 
 use strict;
 
-open(INFO, "words.mlf");
+open(INFO, "ValidationPrompts/validationPrompts.mlf");
 my @lines = <INFO>;
 close(INFO);
 
@@ -15,7 +15,7 @@ foreach my $line (@lines) {
 		$_ = $line;
 		s/\"//g;
 		close(SOURCE);
-		open(SOURCE, ">TrainPrompts/$_");
+		open(SOURCE, ">ValidationPrompts/$_");
 	}
 	else {print SOURCE "$line\n"}
 }
