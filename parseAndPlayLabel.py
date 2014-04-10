@@ -2,6 +2,7 @@ from simplecoremidi import send_midi
 import sys
 import time
 import sched
+import os
 
 beatNames = ['P', 'S', 'K']
 channel = 1  # This is MIDI channel 1
@@ -28,7 +29,8 @@ def playSound(name):
 	print(note)
 	send_midi((note_on_action | channel, note+1, 127))
 
-labelFN = sys.argv[1]
-with open(labelFN) as f:
-	sounds = parseLabel(f)
-	scheduleSounds(sounds)
+def main(labelFN):
+	print(os.getcwd())
+	with open(labelFN) as f:
+		sounds = parseLabel(f)
+		scheduleSounds(sounds)

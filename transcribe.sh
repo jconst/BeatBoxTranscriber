@@ -11,7 +11,7 @@ then
 
 	# encode wav file into MFCCs
 	rm NewRec/newRec.mfc
-	HCopy -T 1 -C needed/config -S NewRec/codeNewRec.scp
+	/usr/local/bin/HCopy -T 1 -C needed/config -S NewRec/codeNewRec.scp
 
 	# Decode input into phones
 	HVite -H hmm10/macros -H hmm10/hmmdefs -S NewRec/newRec.scp -l 'NewRec' -w wdnet -p 0.0 -s 5.0 dict monophones1
