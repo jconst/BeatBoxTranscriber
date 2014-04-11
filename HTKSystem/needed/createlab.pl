@@ -5,7 +5,11 @@
 
 use strict;
 
-open(INFO, "ValidationPrompts/validationPrompts.mlf");
+my ($mlf, $labDir);
+
+($mlf, $labDir) = @ARGV;
+
+open(INFO, $mlf);
 my @lines = <INFO>;
 close(INFO);
 
@@ -15,7 +19,7 @@ foreach my $line (@lines) {
 		$_ = $line;
 		s/\"//g;
 		close(SOURCE);
-		open(SOURCE, ">ValidationPrompts/$_");
+		open(SOURCE, ">$labDir/$_");
 	}
 	else {print SOURCE "$line\n"}
 }

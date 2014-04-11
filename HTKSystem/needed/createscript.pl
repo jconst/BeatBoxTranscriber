@@ -1,4 +1,5 @@
 #!/usr/bin/perl
+#Usage: perl createscript.pl wavDirNoSlashes mfcDirNoSlashes HCopyScript.scp HViteScript.scp
 
 # Emily Mower Provost
 # February 4, 2014
@@ -7,18 +8,20 @@
 
 use strict;
 
-my $loc = 'TrainPrompts';
+my ($loc, $dest, $codescp, $testscp);
+($loc, $dest, $codescp, $testscp) = @ARGV;
+
 my @files = <$loc/*>;
 
-open(SOURCE, ">codetr.scp");
-open(TRAIN, ">train.scp");
+open(SOURCE, ">$codescp");
+open(TRAIN, ">$testscp");
 foreach my $file (@files) {
 	if ($file =~ '.wav') {
 		$_ = $file;
 		s/.wav//;
 		my $short = $`;
 		$_ = $short;
-		s/TrainPrompts/TrainPromptsMFC/;
+		s/$loc/$dest/;
 		print SOURCE "$short.wav $_.mfc\n";
 		print TRAIN "$short.wav\n";
 	}

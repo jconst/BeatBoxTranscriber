@@ -26,7 +26,7 @@ if os.path.isfile('rec.wav'):
 	print ("here")
 	print(call('/usr/local/bin/HCopy -T 1 -C needed/config -S NewRec/codeNewRec.scp'.split()))
 	# Decode input into phones
-	print(call("/usr/local/bin/HVite -H hmm10/macros -H hmm10/hmmdefs -S NewRec/newRec.scp -l NewRec -w wdnet -p 0.0 -s 5.0 dict monophones1".split()))
+	print(call("/usr/local/bin/HVite -H hmm12/macros -H hmm12/hmmdefs -S NewRec/newRec.scp -l NewRec -w wdnet -p 0.0 -s 5.0 dict monophones1".split()))
 	os.chdir('..')
 
 parseAndPlayLabel.main('HTKSystem/NewRec/newRec.rec')

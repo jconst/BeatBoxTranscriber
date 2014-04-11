@@ -22,9 +22,9 @@ perl needed/prompts2mlf words.mlf prompts
 HLEd -l '*' -d dict -i phones0.mlf mkphones0.led words.mlf
 
 # create training scripts
-# perl needed/createscript.pl
+perl needed/createscript.pl TrainPrompts TrainPromptsMFC codetr.scp train.scp
 
-# HCopy -T 1 -C needed/config -S codetr.scp
+HCopy -T 1 -C needed/config -S codetr.scp
 
 # create proto
 perl needed/createproto.pl
@@ -50,7 +50,7 @@ HERest -C needed/config -I phones0.mlf -t 250.0 150.0 1000.0 -S train.scp -H hmm
 perl needed/addsilence.pl
 
 # create label files
-# perl needed/createlab.pl
+perl needed/createlab.pl words.mlf TrainPrompts
 
 # run Viterbi decoding
 HVite -l '*' -o SWT -b silence -C needed/config -a -H hmm7/macros -H hmm7/hmmdefs -i aligned.mlf -m -t 250.0 150.0 1000.0 -y lab -I words.mlf -S train.scp dict monophones1
