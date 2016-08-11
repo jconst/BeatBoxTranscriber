@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # make all directories in advance
-mkdir hmm{0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15}
+mkdir hmm{0,1,2,3,4,5,6,7,8,9,10,11,12}
 
 # convert grammar to HTK Standard Lattice Format
 HParse needed/gram wdnet

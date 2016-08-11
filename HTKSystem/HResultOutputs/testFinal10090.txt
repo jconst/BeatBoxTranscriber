@@ -1,0 +1,8 @@
+====================== HTK Results Analysis =======================
+  Date: Tue Apr 15 20:06:03 2014
+  Ref : TestPrompts/testPrompts.mlf
+  Rec : recout.mlf
+------------------------ Overall Results --------------------------
+SENT: %Correct=96.67 [H=58, S=2, N=60]
+WORD: %Corr=99.85, Acc=99.69 [H=651, D=1, S=0, I=1, N=652]
+===================================================================
